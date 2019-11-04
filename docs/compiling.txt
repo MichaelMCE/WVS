@@ -1,0 +1,55 @@
+
+
+WVS has been configured to compile with either MinGW GCC 3.4 or MinGW GCC 4.2
+MinGW can be obtained from either a complete DevC++ or Code::Blocks install or
+downloaded seperately from the MinGW website.
+
+
+Before compiling:
+Path to the MingGW environment must be set within src/setpath.bat.
+Open setpath.bat then modify "CMPPATH=" to point to your MingGW location. Two examples are provided.
+
+
+wvs.exe:
+To compile WVS from within Code::Block's IDE:
+Open the CB project file WVS.cbp then click Rebuild.
+
+To compile directly using MingGW GCC:
+Executing wvs-exe.bat will build 'wvs.exe'.
+Alternatively from a console window type "setpath" and then "make" from wvs/src/ will also build wvs.exe.
+
+
+gen_wvs.dll:
+Execute src/wvs/BUILD-gen_wvs-dll.bat
+
+
+hook.dll: (required by wvs.exe and gen_wvs.dll)
+Execute src/wvs/hook/build-hook.dll.bat
+
+
+Plugin .DLL's for all players:
+Execute src/wvs/BUILD-Plugins.bat
+
+
+netClient.dll:
+Execute src/wvs/BUILD-client.dll.bat
+netclient.dll can be used by third party applications to communicate directly with the player.
+View example file src/wvs/netClient/example.c for more details.
+
+
+As of 0.30.15 WVS requires lglcd.dll. This file should be copied to the location of the media player executable.
+Eg; For winamp which is installed in to c:\program files\winamp\, lglcd.dll should be copied to c:\program files\winamp\
+
+
+links:
+MinGW:		http://www.mingw.org
+Code::Blocks:	http://www.codeblocks.org
+DevC++:		http://www.bloodshed.net/devcpp.html
+libmylcd: 	http://mylcd.sourceforge.net
+
+MediaMonkey:	http://www.mediamonkey.com
+XMPlay:		http://www.un4seen.com
+Winamp:		http://www.winamp.com
+AIMP:		http://www.aimp.ru
+
+

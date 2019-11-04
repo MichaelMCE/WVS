@@ -1,0 +1,196 @@
+
+
+0.30.14
+-----
+Lyrics page added.
+µTorrent page added.
+Track position can be removed from the progress bar.
+Right shift + wheel can also be used to adjust the columns in the EQ page.
+Added automatic page change when idle.
+Progress bar will auto collapse to allow 3 lines of lyrics in the title page.
+'Invert display' is now a global setting.
+Fixed an access violation within the aMSN page.
+Options of disabled pages removed from the config page.
+WVS now asynchronously handles frame updates and input control.
+Fixed playlist scroll lag, see above.
+Track seeking is now much more fluid, almost instant.
+Bandwidth: Out going data is now represented by a dotted line.
+
+
+via myLCD:
+BDF fonts have updated, default glyph moved to the front and is now the first glyph loaded.
+BDF glyph loader rewritten. Printing should now be speedier.
+Fixed a problem where the default char was not displayed.
+mylcd will now dump duplicate frames between updates.
+Implemented API synchronization.
+Implemented G15 access via libUSB.
+
+
+0.30.11
+-----
+
+Fixed an issue which was preventing the progress bar from updating.
+Fixed a few issues with the Netstat page which were the cause of random crashing.
+WVS will now save the correct 'Rotation degree' value.
+WVS will now use its module path location to locate support files as opposed to the current directory.
+Added the ability to adjust the volume sensitivity. Options are Low, Medium and High. High option is broken on Aimp and XMPlay.
+To reduce startup time and total memory used, each individual applet (page) is no longer initiated at startup, but when first accessed.
+Updated Oscilloscope displays.
+
+Winamp, MediaMonkey and AIMP: WVS.exe has been replaced with gen_wvs.dll.
+XMPlay: wvs.exe has been replaced with xmp-wvsclient.dll.
+An seperate installer is now available for each of the above players. A .rar archive containing wvs.exe is still available for those who use WVS without a Media player.
+As wvs.exe, nonAutoStart.vbs and MM_Auto.vbs are no longer required they have been removed from the installers.
+
+manual.pdf updated.
+16x16, 32x32 and 256x256(Vista only) icons have been added to wvs.exe, gen_wvs.dll and xmp-wvsclient.dll.
+
+Default config adjustments:
+The following pages are now disabled: Mystify, Ping, RSS, ATI Tray Tools, Netstat and aMSN. Can be re-enabled in the config page.
+Channel 2 set to On.
+
+
+0.30.10
+-----
+
+Added XMPlay 3.4.2 compatible plugins.
+
+Updated page swap effect "Slide Up".
+Reimplemented WVS's UDP/IP packet handling, adding a command queue and other stuff.
+Network protocol updated.
+TCP protocol option is no longer available.
+Recompiled mylcd.dll reducing size by around 250k.
+Removed support for LCD's apart from the G15 from mylcd.dll. If you wish to regain this feature then contact me.
+Added CP950 (Big5) to the mappings directory, previously this was compiled in to mylcd.dll.
+Added experimental Big5 and GBK decoding from UTF8 encoded tags and titles. Can be disabled.
+Added an option to configure whether you want keyboard backlight + Mkeys to flash or just either one.
+Added MM_Auto.vbs (by Peke). Use this script if you are consistently experiencing a problem autostarting WVS with MM.
+WVS will now display a message instead of a blank screen when it detects old plugins (gen_wamp.dll and co.).
+Filepath and filename have been split in to seperate lines in the Metdata page.
+String cache can now be flushed manually from within the Playlist page via Control + Softkey 4.
+Alt + Sofykey 4 can now be used to switch between Big5 and GBK encoding. Only applies to Title, Playlist and Meta tag pages.
+Alt + Sofykey 2 can be used to toggle dancinglights between just the backlight, just the Mkeys or both.
+When using AIMP, WVS should no longer display corrupt characters due to AIMP's lack of UTF16/WC API support.
+When using MediaMonkey, visualization should begin automatically at startup.
+
+
+When 'Exit with player=No':
+WVS will now accurately detect when the player has shutdown.
+Title screen will reset after each disconnection.
+Media player volume UI is now disabled after a player has shutdown.
+Hitlist interface is now disabled after a player has shutdown.
+
+Updated readme.txt.
+
+... and lots of other miscellaneous fixes.
+
+
+0.30.9
+-----
+stuff changed
+stuff added
+stuff fixed
+stuff broken
+
+
+... Added G15v2 support.
+
+-----
+0.30.7
+
+aMSN: Fixed an issue with 5/6 line messages causing a render loop to abort.
+Netstat: Fixed an issue with an unchecked function pointer causing a crash on some WinXP machines.
+Added a few MessageBox's to provide further information relating to failed wvs.exe startups.
+Added a debug executable 'wvs_debug.exe', this will generate mylcdlog.txt.
+
+Viewing gen_wamp.dll's config page will no longer hang the player/WVS.
+Fixed a bug introduced in v0.30.6 which was causing WVS to appear to 'stutter' when using TCP.
+readme.txt updated.
+
+------
+0.30.6
+
+Previouslly WVS would terminate if it detected it was out of sync with Winamp, or if Winamp delivered corrupt data.
+WVS will no longer terminate but instead it will restart the network engine if the above occurs.
+
+Winamp will now inform wvs.exe on closing. Previouslly WVS had to rely on corrupt data or timeout from Winamp.
+
+When using WVS under heavy CPU usage the WVS aMSN message queue was being overrun causing WVS to SEQFAULT, resulting in a termination.
+Queue size has been increased and is now checked for overruns.
+
+WVS will now check and gracefully terminate a previous instance of itself.
+
+Default config adjustments:
+Playlist font is now 5x7.
+Playlist encoding is now  8859-1.
+Playlist now displays track number.
+List removable drives set to No.
+
+
+------
+0.30.5
+
+
+Added native support for both AIMP and MediaMonkey.
+
+Added support for the aMSN 'MSN' client.
+A few features:
+o Complete input support allowing you to send messages to your contact list.
+o IRC or standard MSN display format with contact list, and a page per user format.
+o Emoticons. Could use a little help here too.
+o [You've got] Mail and message icons.
+o New mail alert along with sender details.
+o Icons and mail alerts are overlayable on to any page.
+o Locale independent (aMSN handles translation).
+o Block list - A list of those you've blocked.
+o Reverse list - Whose list are you on.
+o Pending list - Users awaiting your confirmation.
+o Accept list - All users who may contact you including those not in another list.
+o Inbox
+o ... and a standard 'online' contact list.
+
+New config page design.
+Added further support for MediaMonkey v2 and v3 (UTF16 via Winamp's IPC messages is unsupported).
+Added a few more global keys.
+
+Core of the plugin (host) code moved from vis_wamp.c to gen_wamp.c. This resolves the 'auto starting' issue.
+Hitlist page added. Displays filenames only, functions similar to the standard playlist page.
+Added the ability to configure the VU and Dancinglights effect via adjustable frequency bandwidth range settings.
+Added an 'LCD Beat' (for lack of a better term) effect. Displays 'shakes' to the beat - or something like that..
+Added a split screen option for the Bandwidth page.
+Added a 12/24hr clock format option. Applies to bandwidth and calendar pages.
+Added ability & option to autodetect UTF16 when encoding is not set to this. Applies only to Playlist, Hitlist and ID3v2 pages.
+Title scroll will display complete title (as much as fits) before scrolling.
+Added a 'Netstat' like statistics page. Displays your external IP, local IP:port, remote IP:port, conn type, state, process id and module path, with 3 displays modes.
+RSS parser should now better handle feeds with embedded HTML.
+Play button now plays the highlighted playlist track.
+A media player is no longer required to initiate WVS (applet can be used without Winamp).
+
+Ping page added. Displays a scrolling Quake-like netgraph of ICMP echos.
+Added a visual confirmation when adding or removing tracks to and from the hitlist.
+histlist files are now encoded in UTF8. File extension is now .m3u8
+Process priority is now configurable. From idle, below normal, normal, above normal and high.
+Khz and Bps icons no longer corrupt the seek icon.
+Available playlist fonts are: 5x7, 7x6, 8x8(ComicSansMS), 8x9, 10x11(Arial), 14x16(Wen Quanyi 9pt - CJK), 18x18(CJK).
+RSS scroller can now backward scroll.
+Added Fastforward and Fastbackward to the RSS scroller via Shift + wheel.
+Now compiled with GNU GCC 4.2.0
+
+Communication between WVS and Winamp is now via a [UDP]TCP/IP socket. This means the G15 and WVS (the client) are no longer tied to the same machine as Winamp (the server) is running from.
+This resolves the playlist buffer size and lag issue which some users experienced. Technically the G15 isn't tied to the same machine as WVS but thats a myLCD feature.
+Reimplemented wheel/scroll/volume control handling using a low level keyboard hook. This should resolve most of the issues people we're having in this area.
+Added a id3v2 Meta tag page. This will display meta tags found in the track and also allow the user to cycle through the playlist in tag mode.
+Added a Fraps page. Note that if you intend on using this feature that Fraps must be executed before WVS.
+Added the ability to overlay the Fraps FPS counter on to any page.
+Playlist page recoded. Increased available fonts from 3 to 7. User can now quickly scroll through the list by holding Shift while using the wheel.
+Added CP1250 and CP1251 encoding options.
+Configurable LCD refresh rate from 10 to 40fps, default is 21. Updates between WVS and Winamp is tided to this value.
+Internal refresh rate locked at 45 passes per secound, previously > 200. This has had a major effect on lowering WVS's CPU usage.
+Spectrograph height is now configurable.
+Added UTF16 support.
+Fixed an issue with WVS unable to acquire a handle to the master volume control.
+Fixed a few bugs with the RSS feeder.
+Fixed a few config page settings not saving.
+Crash when having gen_wamp.dll in the plugins directory resolved.
+Selected volume is now adjustable from any page.
+

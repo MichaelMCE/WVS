@@ -1,0 +1,351 @@
+; Original English template by
+; Michael McElligott
+;
+
+; comments after strings must be preceded by a tab then semicolon. ie, '\t' ';'
+
+; set language from either: 8859-1 to 16, gb2312, gbk, big5, utf8, sjis, cp949, cp1250 or cp1251
+; default is 8859-15 (standard latin character set)
+encoding=8859-15
+
+
+; meta tag page
+Title=Title
+Artist=Artist
+Album=Album
+Track=Track
+Year=Year
+Genre=Genre
+Comment=Comment
+Length=Length
+Bitrate=Bitrate
+SRate=SRate
+Stereo=Stereo
+VBR=VBR
+BPM=BPM
+Gain=Gain
+AlbumGain=AlbumGain				; no space
+Encoder=Encoder
+AlbumArtist=AlbumArtist			; no space
+OriginalArtist=OriginalArtist	; no space
+Disc=Disc
+Remixer=Remixer
+Media=Media
+Lyricist=Lyricist
+Subtitle=Subtitle
+Mood=Mood
+Key=Key
+Composer=Composer
+Conductor=Conductor
+Publisher=Publisher
+Copyright=Copyright
+URL=URL
+
+
+; Title page
+Trk=Trk				; Track
+Master=Master
+Wave=Wave
+Hateit=Hate it
+Likeit=Like it
+Added=Added
+Removed=Removed
+
+
+; EQ page
+EQ=EQ
+Auto=Auto
+db=db
+
+
+; Lyric page
+LyricsUnavailable=Lyrics Unavailable
+LYTitle=Title
+LYArtist=Artist
+LYAlbum=Album
+LYAuthor=Author
+LYEncoding=Encoding
+Re=Re
+Version=Version
+Offset=Offset
+LYLyrics=Lyrics
+Stamps=Stamps
+
+
+; aMSN page
+ContactList=Contact list
+ReverseList=Reverse list
+AllowedList=Allowed list
+BlockedList=Blocked list
+PendingList=Pending list
+AllContacts=All contacts
+Inbox=Inbox
+
+
+; uTorrent page
+Status=Status
+Completed=Completed
+Name=Name
+DownRate=Down rate
+UpRate=Up rate
+ETA=ETA
+Label=Label
+ÊTorrentUnavail=µTorrent unavailable
+Have=Have
+of=of			; eg, Have 5% of 1.1G
+Seeds=Seeds
+Peers=Peers
+Complete=Complete
+Paused=Paused
+Downloading=Downloading
+Seeding=Seeding
+DownloadForced=Download forced
+SeedingForced=Seeding forced
+Checking=Checking
+Error=Error
+Queued=Queued
+Stopped=Stopped
+Torrents=Torrents
+In=In
+Out=Out
+Ratio=Ratio
+Avail=Avail		; Available
+R=R				; Ratio
+A=A				; Available
+DL=DL			; DownLoad
+UL=UL			; UpLoad
+Se=Se			; Seeding
+Dn=Dn			; Downloading
+Cp=Cp			; Completed
+Pu=Pu			; Paused
+St=St			; Stopped
+Er=Er			; Error
+
+
+; Netstat
+Prot=Prot		; Protocol
+LoIP=Lo.IP		; Local IP
+ReIP=Re.IP		; Remote IP
+Pt=Pt			; Port
+Pid=Pid			; Process ID
+File=File
+State=State
+ProtocolTCPUDP=Protocol (TCP/UDP)
+LocalIP=Local IP
+LocalPort=Local port
+RemoteIP=Remote IP (TCP only)
+RemotePort=Remote port (TCP only)
+ProcessID=Process ID
+Filename=Filename
+TCPConnState=TCP connection state
+Protocol=Protocol
+Endpoint=Endpoint		; USB endpoint
+Local=Local				; local address
+Remote=Remote			; Remote address
+Module=Module			; filename of process
+ConnectionState=Connection state
+unknown=unknown
+Closed=Closed
+Listening=Listening
+SynSent=Syn Sent		; Synchronize sent
+SynReceived=Syn Received
+Established=Established
+FinWait-1=Fin Wait-1	; Finish wait
+FinWait-2=Fin Wait-2
+CloseWait=Close Wait
+Closing=Closing
+LastAcknowledge=Last Acknowledge
+TimeWait=Time Wait
+DeleteTCB=Delete TCB
+system=system			; a system process
+YourIP=Your IP
+
+; Process list
+Process=Process
+PID=PID				; Process ID
+Ths=Ths				; Threads
+MemUsage=Mem usage
+PeakMemUsage=Peak mem usage
+PageFaults=Page faults
+
+
+; System info
+CPU=CPU
+Page=Page		; swap page size
+Virt=Virt		; Virtual
+Uptime=Uptime
+W=w				; week
+D=d				; day
+H=h				; hour
+M=m				; minute
+
+
+; ATT
+ATTNotFound=ATI Tray Tools not found
+GPU=GPU			
+FPS=FPS			; Frames per second
+Env=Env			; environment
+Mode=Mode
+Fan=Fan
+OGL=OGL			; Open GL
+AA=AA			; Anti Aliasing
+AF=AF			; Anisotropic Filtering
+D3D=D3D			; Direct 3D
+
+
+; Fraps
+FrapsNotFound=Fraps not found
+StartFrapsFirst=(Start Fraps before WVS)
+
+
+; Ping
+ms=ms			; Milli Second
+
+
+; Calendar
+January=January
+February=February
+March=March
+April=April
+May=May
+June=June
+July=July
+August=August
+September=September
+October=October
+November=November
+December=December
+Mo=Mo		; Monday
+Tu=Tu		; Tuesday
+We=We		; Wednesday
+Th=Th		; Thursday
+Fr=Fr		; Friday
+Sa=Sa		; Saturday
+Su=Su		; Sunday
+
+; about
+About=About
+CompiledWith=Compiled with
+
+
+; general and miscellaneous
+On=On
+Off=Off
+Enabled=Enabled
+Disabled=Disabled
+Mem=Mem		; Memory
+Gb=Gb		; Gigabyte
+Mb=Mb		; Megabyte
+
+
+
+; config page
+Pagestatus=Page status
+Metadata=Meta data
+Mediaplayer=Media player
+Playlist=Playlist
+Hitlist=Hitlist
+Equalizer=Equalizer
+Lyrics=Lyrics
+aMSN=aMSN
+Bandwidth=Bandwidth
+ÊTorrent=µTorrent
+Netstat=Netstat
+Processlist=Process list
+Systeminfo=System info
+ATITrayTools=ATI Tray Tools
+Fraps=Fraps
+RSS2.0=RSS 2.0
+Ping=Ping
+Calendar=Calendar
+Mystify=Mystify
+Particles=Particles
+Config=Config
+
+AutodetectUTF16=Auto detect UTF16
+AutodetectUTF8=Auto detect UTF8
+Volumecontrol=Volume control
+Volumesensitivity=Volume sensitivity
+Updaterate=Update rate
+Graph=Graph
+Spectrumheight=Spectrum height
+Peakfalloffrate=Peak falloff rate
+Trackseektime=Track seek time
+Channel2=Channel 2
+Progressbar=Progress bar
+Playlistpos=Playlist pos
+Tracktime=Track time
+TrackKhz=Track Khz
+TrackBps=Track Bps
+VUpeakindicators=VU peak indicators
+
+Unicodefilepaths=Unicode filepaths
+
+Tracknumber=Track number
+Scrollpercent=Scroll percent
+Font=Font
+Mediaencoding=Encoding
+
+OverlayinMain=Overlay in Main
+Lyricsfont=Lyrics font
+Globaltimeoffset=Global time offset
+Lyricencoding=Encoding
+
+Autoconnect=Auto connect
+Mailnotification=Mail notification
+Mailnotifytimeout=Mail notify timeout
+OverlayIcons=Overlay Icons
+Overlaypage=Overlay page
+Iconoverlaytimeout=Icon overlay timeout
+Openeditbox=Open editbox(IME)
+Emoticons=Emoticons
+Usernameformat=Username format
+Language=Encoding
+
+Interface=Interface
+Splitscreen=Split screen
+Clock=Clock
+
+Flags=Flags
+IPlookup=IP lookup
+
+Freespaceunit=Free space unit
+Displayunits=Display units
+Listremovabledrives=List removable drives
+
+Temperature=Temperature
+
+Frapsoverlay=Fraps overlay
+Overlay=Overlay
+OVRLYPage=Page
+Position=Position
+FPSFont=Font
+Printmode=Print mode
+
+G15=G15
+Dancinglights=Dancinglights
+LCDbeat=LCD Beat
+Reversevolumecontrol=Reverse volume control
+Handlemediakeys=Handle media keys
+LowerBWlimit=Lower BW limit
+UpperBWlimit=Upper BW limit
+LEDscale=LED scale
+M1LEDlevel=M1 LED level
+M2LEDlevel=M2 LED level
+M3LEDlevel=M3 LED level
+MRLEDlevel=MR LED level
+LCDbeatlevel=LCD Beat level
+KBLEDlevel1=KB LED level 1
+KBLEDlevel2=KB LED level 2 
+
+General=General
+Defaultpage=Default page
+Pageswapeffect=Page swap effect
+Autoswapwhenidle=Auto swap when idle
+Rotationdegree=Rotation degree
+Clockformat=Clock format
+Invertdisplay=Invert display
+Waitforplayer=Wait for player
+Exitwithplayer=Exit with player
+Processpriority=Process priority
+Profile=Profile

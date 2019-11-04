@@ -1,0 +1,7 @@
+; r:\MinGW\bin\dlltool --base-file C:\Users\a\AppData\Local\Temp\cca19976.base --output-exp xmp-wvs.exp --dllname xmp-wvs.dll --output-def xmplay.def --no-export-all-symbols --add-stdcall-alias --exclude-symbol=DllMainCRTStartup@12 --def C:\Users\a\AppData\Local\Temp\cca19976.def --output-lib libxmplay.a
+EXPORTS
+	DllMain@12 @ 1
+	XMPDSP_GetInterface2 = XMPDSP_GetInterface2@8 @ 2
+	XMPDSP_GetInterface2@8 @ 3
+	getMPStructPtr @ 4
+	DllMain = DllMain@12 @ 5

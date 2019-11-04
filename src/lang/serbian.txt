@@ -1,0 +1,351 @@
+; Serbian translation by
+; anonymous
+;
+
+; comments after strings must be preceded by a tab then semicolon. ie, '\t' ';'
+
+; set language from either: 8859-1 to 16, gb2312, gbk, big5, utf8, sjis, cp949, cp1250 or cp1251
+; default is 8859-15 (standard latin character set)
+encoding=utf8
+
+
+; meta tag page
+Title=Naziv
+Artist=Izvođač
+Album=Album
+Track=Traka
+Year=Godina
+Genre=Žanr
+Comment=Komentar
+Length=Dužina
+Bitrate=Bitrate
+SRate=SRate
+Stereo=Stereo
+VBR=VBR
+BPM=BPM
+Gain=Gain
+AlbumGain=AlbumGain				; no space
+Encoder=Enkoder
+AlbumArtist=AlbumIzvođač			; no space
+OriginalArtist=OriginalniIzvođač	; no space
+Disc=Disk
+Remixer=Remixer
+Media=Medija
+Lyricist=Tekstopisac
+Subtitle=reči
+Mood=Raspoloženje
+Key=Ključ
+Composer=Kompozitor
+Conductor=Dirigent
+Publisher=Izdavač
+Copyright=Copyright
+URL=URL
+
+
+; Title page
+Trk=Trk				; Track
+Master=Master
+Wave=Wave
+Hateit=Ne volim
+Likeit=Volim
+Added=Dodato
+Removed=Izbačeno
+
+
+; EQ page
+EQ=EQ
+Auto=Auto
+db=db
+
+
+; Lyric page
+LyricsUnavailable=Tekst nedostupan
+LYTitle=Naziv
+LYArtist=Izvođač
+LYAlbum=Album
+LYAuthor=Autor
+LYEncoding=Encoding
+Re=Re
+Version=Verzija
+Offset=Ofset
+LYLyrics=Tekst
+Stamps=Etikete
+
+
+; aMSN page
+ContactList=Lista kontakata
+ReverseList=Obrnuta lista
+AllowedList=Dozvoljena Lista
+BlockedList=Blokirana Lista
+PendingList=Lista na čekanju
+AllContacts=Svi kontakti
+Inbox=Inboks
+
+
+; uTorrent page
+Status=Status
+Completed=Završeno
+Name=Ime
+DownRate=Brzina skidanja
+UpRate=Up Brzina uploada
+ETA=POV
+Label=Natpis
+�TorrentUnavail=µTorrent nije dostupan
+Have=Ima
+of=od			; eg, Have 5% of 1.1G
+Seeds=Seedova
+Peers=Peerova
+Complete=Završeno
+Paused=Pauzirano
+Downloading=Downloadovanje
+Seeding=Seedovanje
+DownloadForced=Download forceovan
+SeedingForced=Seedovanje forceovano
+Checking=Provera
+Error=Greška
+Queued=stavljeno u red
+Stopped=Zaustavljeno
+Torrents=Torrenti
+In=ulaz
+Out=izlaz
+Ratio=odnos
+Avail=dostupno		; Available
+R=R				; Ratio
+A=A				; Available
+DL=DL			; DownLoad
+UL=UL			; UpLoad
+Se=Se			; Seeding
+Dn=Dn			; Downloading
+Cp=Gt			; Completed
+Pu=Pz			; Paused
+St=Za			; Stopped
+Er=Gr			; Error
+
+
+; Netstat
+Prot=Prot		; Protocol
+LoIP=Lo.IP		; Local IP
+ReIP=Re.IP		; Remote IP
+Pt=Pt			; Port
+Pid=Pid			; Process ID
+File=Fajl
+State=Stnje
+ProtocolTCPUDP=Protokol (TCP/UDP)
+LocalIP=Lokalna IP
+LocalPort=Lokalni port
+RemoteIP=Remote IP (TCP only)
+RemotePort=Remote port (TCP only)
+ProcessID=Proces ID
+Filename=ime fajla
+TCPConnState=TCP status konekcije
+Protocol=Protokol
+Endpoint=Endpoint		; USB endpoint
+Local=Lokal				; local address
+Remote=Remote			; Remote address
+Module=Modul			; filename of process
+ConnectionState=Status konekcije
+unknown=Nepoznato
+Closed=Zatvoreno
+Listening=Osluškivanje
+SynSent=Syn poslat		; Synchronize sent
+SynReceived=Syn Received
+Established=Established
+FinWait-1=Fin Wait-1	; Finish wait
+FinWait-2=Fin Wait-2
+CloseWait=Close Wait
+Closing=Closing
+LastAcknowledge=Last Acknowledge
+TimeWait=Time Wait
+DeleteTCB=Delete TCB
+system=sistem			; a system process
+YourIP=Vaš IP
+
+; Process list
+Process=Proces
+PID=PID				; Process ID
+Ths=Ths				; Threads
+MemUsage=Mem iskoriscenost
+PeakMemUsage=maks mem iskoriscenost
+PageFaults=Page greske
+
+
+; System info
+CPU=CPU
+Page=Page		; swap page size
+Virt=Virt		; Virtual
+Uptime=Uptime
+W=N				; week
+D=d				; day
+H=S				; hour
+M=M				; minute
+
+
+; ATT
+ATTNotFound=ATI Tray Tools nije pronađen
+GPU=GPU			
+FPS=FPS			; Frames per second
+Env=Env			; environment
+Mode=Mod
+Fan=Ventilator
+OGL=OGL			; Open GL
+AA=AA			; Anti Aliasing
+AF=AF			; Anisotropic Filtering
+D3D=D3D			; Direct 3D
+
+
+; Fraps
+FrapsNotFound=Fraps nije pronađen
+StartFrapsFirst=(Pokrenite Fraps pre WVS-a)
+
+
+; Ping
+ms=ms			; Milli Second
+
+
+; Calendar
+January=Januar
+February=Februar
+March=Mart
+April=April
+May=Maj
+June=Jun
+July=Juli
+August=Avgust
+September=Septembar
+October=Oktobar
+November=Novembar
+December=Decembar
+Mo=Po		; Monday
+Tu=Ut		; Tuesday
+We=Sr		; Wednesday
+Th=Če		; Thursday
+Fr=Pe		; Friday
+Sa=Su		; Saturday
+Su=Ne		; Sunday
+
+; about
+About=About
+CompiledWith=Kompajlirano sa
+
+
+; general and miscellaneous
+On=Uključeno
+Off=Isključeno
+Enabled=Enablovano
+Disabled=Disablovano
+Mem=Mem		; Memory
+Gb=Gb		; Gigabyte
+Mb=Mb		; Megabyte
+
+
+
+; config page
+Pagestatus=Status strane
+Metadata=Meta podaci
+Mediaplayer=Medija plejer
+Playlist=Playlista
+Hitlist=Hitlista
+Equalizer=Ikvalajzer
+Lyrics=Tekst
+aMSN=aMSN
+Bandwidth=Bandwidth
+�Torrent=µTorrent
+Netstat=Netstat
+Processlist=Lista procesa
+Systeminfo=Sistem informacije
+ATITrayTools=ATI Tray Tools
+Fraps=Fraps
+RSS2.0=RSS 2.0
+Ping=Ping
+Calendar=Kalendar
+Mystify=Mystify
+Particles=Čestice
+Config=Konfig
+
+AutodetectUTF16=Auto detektovanje UTF16
+AutodetectUTF8=Auto detektovanje UTF8
+Volumecontrol=Jačina zvuka
+Volumesensitivity=Osetljivost zvuka
+Updaterate=Tempo updateovanja
+Graph=Grfik
+Spectrumheight=Visina Spektruma
+Peakfalloffrate=Maks falloff tempo
+Trackseektime=seek vreme trake
+Channel2=Kanal 2
+Progressbar=Progres bar
+Playlistpos=Pozicija playliste
+Tracktime=Duzina Trake
+TrackKhz=khz Trake
+TrackBps=Bps Trake
+VUpeakindicators=VU vrh indikator
+
+Unicodefilepaths=Unicode fajlputanje
+
+Tracknumber=Broj Trake
+Scrollpercent=Procenat skrolovanja
+Font=Font
+Mediaencoding=Enkoding
+
+OverlayinMain=Overlay u Glavnom
+Lyricsfont=Font teksta
+Globaltimeoffset=Globalni offset vremena
+Lyricencoding=Enkoding
+
+Autoconnect=Auto konektovanje
+Mailnotification=Notifikacija mejla
+Mailnotifytimeout=Vreme notifikacije mejla
+OverlayIcons=Overlay ikonice
+Overlaypage=Overlay strana
+Iconoverlaytimeout=Vreme overlaz ikonica
+Openeditbox=Otvori editbox(IME)
+Emoticons=Smajliji
+Usernameformat=Format korisničkog imena
+Language=Enkoding
+
+Interface=Interfejs
+Splitscreen=Deljenje ekrana
+Clock=Sat
+
+Flags=Flagovi
+IPlookup=IP provera
+
+Freespaceunit=Jedinica slobodnog prostora
+Displayunits=Jedinica prikaza
+Listremovabledrives=Lista uređaja koji se skidaju
+
+Temperature=Temperatura
+
+Frapsoverlay=Fraps overlay
+Overlay=Overlay
+OVRLYPage=Strana
+Position=Pozicija
+FPSFont=Font
+Printmode=Mod štampe
+
+G15=G15
+Dancinglights=Beatsvetla
+LCDbeat=LCD Beat
+Reversevolumecontrol=Obrni kontrolu zvuka
+Handlemediakeys=Handleuj media tastere
+LowerBWlimit=Niži BW limit
+UpperBWlimit=Viši BW limit
+LEDscale=LED skala
+M1LEDlevel=M1 LED nivo
+M2LEDlevel=M2 LED nivo
+M3LEDlevel=M3 LED nivo
+MRLEDlevel=MR LED nivo
+LCDbeatlevel=LCD Beat nivo
+KBLEDlevel1=KB LED nivo 1
+KBLEDlevel2=KB LED nivo 2 
+
+General=Generalno
+Defaultpage=Podrazumevana Strana
+Pageswapeffect=Efekat promene stranice
+Autoswapwhenidle=Auto swap kad idleuje
+Rotationdegree=Stepen rotacije
+Clockformat=Format sata
+Invertdisplay=Invertuj displej
+Waitforplayer=Cekaj plejer
+Exitwithplayer=Zatvori sa plejerom
+Processpriority=Prioritet procesa
+Profile=Profil

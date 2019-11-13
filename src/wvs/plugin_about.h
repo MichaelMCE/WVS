@@ -42,10 +42,11 @@ static void plugin_about (TMP *mpp, char *title)
 	  message, mpp->net.sendCt, mpp->net.readCt,\
 	  MY_NAME, MY_VERSION1, MY_VERSION2, MY_VERSION3);
 
-	if (IPPROTOCOL > 0)
-		sprintf(message, "%s TCP", message);
-	else
-		sprintf(message, "%s UDP", message);
+#if (IPPROTOCOL > 0)
+	sprintf(message, "%s TCP", message);
+#else
+	sprintf(message, "%s UDP", message);
+#endif
 	
 	MessageBox(mpp->hwndParent, message, title, MB_OK);
 	

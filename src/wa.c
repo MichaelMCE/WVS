@@ -22,6 +22,8 @@
 
 
 
+#include <winsock2.h>
+#include <windows.h>
 #include <string.h>
 #include <math.h>
 #include <conio.h>

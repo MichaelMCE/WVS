@@ -17,6 +17,7 @@
 //  GNU LIBRARY GENERAL PUBLIC LICENSE for details.
 
 
+#include <winsock2.h>
 #include <windows.h>
 #include <conio.h>
 #include <fcntl.h>
@@ -86,7 +87,7 @@ int init ()
 
 	
 	_wsplitpath(getWinampPathW(), drive, dir, NULL, NULL);
-	swprintf(szPath, L"%s%s", drive, dir);
+	__mingw_swprintf(szPath, L"%s%s", drive, dir);
 	//wprintf(L"-%s-\n", (wchar_t*)szPath);
 	SetCurrentDirectoryW(szPath);
 

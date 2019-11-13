@@ -1,4 +1,4 @@
-; r:\MinGW\bin\dlltool --base-file C:\Users\a\AppData\Local\Temp\cca71380.base --output-exp gen_wamp.exp --dllname gen_wamp.dll --output-def libwamp.def --no-export-all-symbols --add-stdcall-alias --exclude-symbol=DllMainCRTStartup@12 --def C:\Users\a\AppData\Local\Temp\cca71380.def --output-lib libgen_wamp.a
+; r:\cb\mingw\bin\dlltool --base-file m:\Temp\cca02200.base --output-exp gen_wamp.exp --dllname gen_wamp.dll --output-def libwamp.def --no-export-all-symbols --add-stdcall-alias --exclude-symbol=DllMainCRTStartup@12 --def m:\Temp\cca02200.def --output-lib libgen_wamp.a
 EXPORTS
 	DllMain@12 @ 1
 	getMPStructPtr @ 2

@@ -1,8 +1,8 @@
 @echo off
 
 REM set path to MingGW here:
-rem SET CMPPATH=f:\Dev-Cpp5
-SET CMPPATH=m:\MinGW
+SET CMPPATH=r:\cb\mingw
+rem SET CMPPATH=f:\MinGW482
 
 
 

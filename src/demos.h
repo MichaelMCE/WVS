@@ -25,8 +25,8 @@
 
 
 #if 0
-# define dbprintf printf
-# define dbwprintf wprintf
+# define dbprintf __mingw_printf
+# define dbwprintf __mingw_wprintf
 #else
 # define dbprintf(X,...) 
 # define dbwprintf(X,...) 
@@ -56,11 +56,11 @@ int initLibrary (wchar_t *path)
 		dbwprintf(L"initLibrary: wvs location: '%s'\n",path);
 		
 		memset(fontPath, 0, sizeof(fontPath));
-		swprintf(fontPath, L"%s%s", path, L"wvs\\fonts\\");
+		__mingw_swprintf(fontPath, L"%s%s", path, L"wvs\\fonts\\");
 		dbwprintf(L"\ninitLibrary: font path:'%s'\n", fontPath);
 		
 		memset(mapPath, 0, sizeof(mapPath));
-		swprintf(mapPath, L"%s%s", path, L"wvs\\mappings\\");
+		__mingw_swprintf(mapPath, L"%s%s", path, L"wvs\\mappings\\");
 		dbwprintf(L"initLibrary: cmap path:'%s'\n", mapPath);
 	}else{
 		dbwprintf(L"\ninitLibrary: font path:'%s'\n", L"plugins\\wvs\\fonts\\");
